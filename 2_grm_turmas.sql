@@ -6,6 +6,6 @@ CREATE TABLE turmas (
     nome VARCHAR(100) NOT NULL,
     ano_inicio DATE,
     ano_fim DATE,
-    PRIMARY KEY (id),
+   
     FOREIGN KEY (id_curso) REFERENCES cursos(id)
 );
