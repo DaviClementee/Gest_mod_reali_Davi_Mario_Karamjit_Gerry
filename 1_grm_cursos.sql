@@ -6,5 +6,4 @@ CREATE TABLE cursos (
     data_inicio DATE,
     data_conclusao DATE,
     PRIMARY KEY (id),
-    
 );
