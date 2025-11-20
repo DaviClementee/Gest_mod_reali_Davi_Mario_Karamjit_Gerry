@@ -5,5 +5,5 @@ CREATE TABLE cursos (
     nome VARCHAR(100) NOT NULL,
     data_inicio DATE,
     data_conclusao DATE,
-    PRIMARY KEY(id)
+    PRIMARY KEY (id),
 );
