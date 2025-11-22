@@ -14,4 +14,4 @@ CREATE TABLE mod_disciplina_cursos (
     FOREIGN KEY (id_modulo) REFERENCES modulos(id),
     FOREIGN KEY (id_disciplina) REFERENCES disciplinas(id),
     FOREIGN KEY (id_curso) REFERENCES cursos(id)
-);
+);  

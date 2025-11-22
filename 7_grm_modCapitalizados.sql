@@ -10,7 +10,10 @@ CREATE TABLE mod_capitalizados (
     data_capitalizado DATE NOT NULL,
     nota_final DECIMAL(2,1) NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (id_aluno) REFERENCES alunos(id),
+    CONSTRAINT fk_mod_capitalizados_alunos
+    FOREIGN KEY (id_aluno) REFERENCES alunos(id)
+    ON DELETE CASCADE
+    ON UPDATE RESTRICT, 
     FOREIGN KEY (id_turma) REFERENCES turmas(id),
     FOREIGN KEY (id_mod_disiplina_curso) REFERENCES mod_disciplina_cursos(id)
 );
