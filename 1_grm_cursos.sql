@@ -8,9 +8,9 @@ CREATE TABLE cursos (
     PRIMARY KEY (id)
 );
 
-INSERT INTO cursos (id, nome, data_inicio, data_conclusao)
+INSERT INTO cursos (nome, data_inicio, data_conclusao)
 VALUES
-(1, 'Técnico de Gestão e Programação de Sistemas Informáticos','2021-09-01', '2024-06-30');
+('Técnico de Gestão e Programação de Sistemas Informáticos','2021-09-01', '2024-06-30');
 
 SELECT *FROM cursos;
 
