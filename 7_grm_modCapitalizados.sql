@@ -18,13 +18,3 @@ CREATE TABLE mod_capitalizados (
     FOREIGN KEY (id_mod_disiplina_curso) REFERENCES mod_disciplina_cursos(id)
 );
 
-INSERT INTO mod_capitalizados 
-(id_aluno, id_turma, id_mod_disiplina_curso, data_capitalizado, nota_final)
-VALUES
-(1, 1, 1, '2024-06-10', 14.5),
-(2, 1, 2, '2024-06-11', 15.0),
-(3, 2, 1, '2024-06-12', 13.0),
-(4, 2, 3, '2024-06-13', 16.5),
-(5, 3, 4, '2024-06-14', 12.5);
-
-SELECT * FROM mod_Capitalizados;
