@@ -35,18 +35,4 @@ VALUES
     (1, 'Rafa', 4760, '4760@esjaloures.org'),  
     (1, 'Tiago', 6815, '6815@esjaloures.org');
 
---Alunos da turma 11ºTGPSI
-INSERT INTO alunos (id_turma, nome, num_processo, email) 
-VALUES 
-    (2, 'João Miguel', 5021, '5021@esjaloures.org'),
-    (2, 'Maria Leonor', 1438, '1438@esjaloures.org'),
-    (2, 'Pedro Afonso', 9912, '9912@esjaloures.org'),
-    (2, 'Ana Carolina', 3350, '3350@esjaloures.org'),
-    (2, 'Tiago Filipe', 6075, '6075@esjaloures.org'),
-    (2, 'Sofia Margarida', 8802, '8802@esjaloures.org'),
-    (2, 'Dinis Manuel', 4116, '4116@esjaloures.org'),
-    (2, 'Inês Maria', 7490, '7490@esjaloures.org'),
-    (2, 'Vasco Rafael', 1764, '1764@esjaloures.org');
-
-
 SELECT * FROM alunos;

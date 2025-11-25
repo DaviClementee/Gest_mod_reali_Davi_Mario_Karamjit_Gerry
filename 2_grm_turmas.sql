@@ -13,6 +13,5 @@ CREATE TABLE turmas (
 INSERT INTO turmas (id_curso, nome, ano_inicio, ano_fim)
 VALUES 
 (1, '12ºTGPSI', '2023', '2026'),
-(2, '11ºTGPSI', '2024', '2027');
 
 SELECT * FROM turmas;
