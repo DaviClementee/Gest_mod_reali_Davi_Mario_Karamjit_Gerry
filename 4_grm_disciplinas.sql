@@ -17,7 +17,7 @@ VALUES
 ('Programação de Sistemas de Informação'),
 ('Sistemas Operativos'),
 ('Area de integarção'),
-('Fisica e Química');
-('Educação Física')
+('Fisica e Química'),
+('Educaçao Física');
 
 SELECT * FROM disciplinas;
