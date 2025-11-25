@@ -18,5 +18,6 @@ VALUES
 ('Sistemas Operativos'),
 ('Area de integarção'),
 ('Fisica e Química');
+('Educação Física')
 
 SELECT * FROM disciplinas;
