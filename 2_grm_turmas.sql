@@ -8,6 +8,7 @@ CREATE TABLE turmas (
     ano_fim YEAR NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (id_curso) REFERENCES cursos(id)
+    --ligação com a tabela "cursos"
 );
 
 INSERT INTO turmas (id_curso, nome, ano_inicio, ano_fim)
