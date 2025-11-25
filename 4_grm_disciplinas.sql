@@ -10,16 +10,13 @@ CREATE TABLE disciplinas (
 
 INSERT INTO disciplinas (nome) 
 VALUES 
-    ('Português'),
-    ('Inglês'),
-    ('Area de integarção'),
-    ('Educação Física'),
-    ('Tecnologias de Informação e Comunicação'),
-    ('Matemática'),
-    ('Fisica e Química'),
-    ('Sistemas Operativos'),
-    ('Arquitectura de Computadore'),
-    ('Redes de Computadores'),
-    ('Programação de Sistemas de Informação');
+('Português'),
+('Matemática'),
+('Inglês'),
+('Redes de Computadores'),
+('Programação de Sistemas de Informação'),
+('Sistemas Operativos'),
+('Area de integarção'),
+('Fisica e Química');
 
 SELECT * FROM disciplinas;

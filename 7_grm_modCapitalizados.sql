@@ -17,3 +17,4 @@ CREATE TABLE mod_capitalizados (
     FOREIGN KEY (id_turma) REFERENCES turmas(id),
     FOREIGN KEY (id_mod_disiplina_curso) REFERENCES mod_disciplina_cursos(id)
 );
+
