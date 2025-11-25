@@ -4,25 +4,15 @@ CREATE TABLE turmas (
     id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
     id_curso INT(11) UNSIGNED NOT NULL,
     nome VARCHAR(100) NOT NULL,
-    ano_inicio DATE,
-    ano_fim DATE,
+    ano_inicio YEAR NOT NULL,
+    ano_fim YEAR NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (id_curso) REFERENCES cursos(id)
 );
 
 INSERT INTO turmas (id_curso, nome, ano_inicio, ano_fim)
-VALUES
-(1, 'PTPSI2021', '2021-09-01', '2024-06-30');
-
-INSERT INTO turmas (id_curso, nome, ano_inicio, ano_fim)
-VALUES
-(1, 'PTPSI2022', '2022-09-01', '2025-06-30');
-
-INSERT INTO turmas (id_curso, nome, ano_inicio, ano_fim)
-VALUES
-(1, 'PTPSI2023', '2023-09-01', '2026-06-30');
+VALUES 
+(1, '12ºTGPSI', '2023', '2026'),
+(2, '11ºTGPSI', '2024', '2027');
 
 SELECT * FROM turmas;
-
-SELECT COUNT(*)
-FROM turmas;
