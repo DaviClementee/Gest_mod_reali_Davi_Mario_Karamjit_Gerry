@@ -1,5 +1,5 @@
 USE grm_system;
-
+-- elimina a tabela "alunos" se ela já existir
 DROP TABLE IF EXISTS alunos;
 
 CREATE TABLE alunos (
