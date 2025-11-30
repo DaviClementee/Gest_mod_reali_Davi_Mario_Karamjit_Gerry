@@ -5,7 +5,7 @@ DROP TABLE IF EXISTS modulos;
 CREATE TABLE modulos (
     id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
     id_disciplina INT(11) UNSIGNED NOT NULL,
-    nome VARCHAR(100) UNIQUE NOT NULL,
+    nome VARCHAR(100) NOT NULL,
     ano VARCHAR(50),
     PRIMARY KEY (id),
     FOREIGN KEY (id_disciplina) REFERENCES disciplinas(id)
@@ -67,12 +67,12 @@ INSERT INTO modulos (id_disciplina, nome, ano)
 VALUES
     (5, 'Pesquisar, filtrar e estruturar informação e conteúdos em ambientes digitais', 'ANO 1'),
     (5, 'Organização e tratamento de dados', 'ANO 1'),
-    (5, 'Gestão de base de dados'),
-    (5, 'Introdução à programação'),
+    (5, 'Gestão de base de dados', NULL), 
+    (5, 'Introdução à programação', NULL), 
     (5, 'Criação de páginas WEB', 'ANO 1'),
-    (5, 'Aquisição e tratamento de imagem'),
+    (5, 'Aquisição e tratamento de imagem', NULL), 
     (5, 'Edição de som e video', 'ANO 1'),
-    (5, 'Introdução à modelação 3D');
+    (5, 'Introdução à modelação 3D', NULL);
 
 INSERT INTO modulos (id_disciplina, nome, ano) 
 VALUES
@@ -86,42 +86,42 @@ VALUES
     (6, 'Modelos Discretos', 'ANO 2'),
     (6, 'Funções de Crescimento', 'ANO 3'),
     (6, 'Otimização', 'ANO 3'),
-    (6, 'Funções periódicas e não periódicas'),
-    (6, 'Estatistica Computacional'),
-    (6, 'Modelos de Funções'),
-    (6, 'Programação Linear'),
-    (6, 'Jogos e Matemática'),
-    (6, 'Padrões Geométricos');
+    (6, 'Funções periódicas e não periódicas', NULL),
+    (6, 'Estatistica Computacional', NULL),
+    (6, 'Modelos de Funções', NULL),
+    (6, 'Programação Linear', NULL),
+    (6, 'Jogos e Matemática', NULL),
+    (6, 'Padrões Geométricos', NULL);
 
 INSERT INTO modulos (id_disciplina, nome, ano) 
 VALUES
     (7, 'Forças e Movimentos', 'ANO 2'),
-    (7, 'Estática'),
-    (7, 'Trabalho e Energia'),
-    (7, 'Máquinas Simples'),
-    (7, 'Hidrostática e Hidrodinâmica'),
+    (7, 'Estática', NULL),
+    (7, 'Trabalho e Energia', NULL),
+    (7, 'Máquinas Simples', NULL),
+    (7, 'Hidrostática e Hidrodinâmica', NULL),
     (7, 'Luz e Fontes de Luz', 'ANO 1'),
-    (7, 'Ótica geométrica'),
-    (7, 'Ótica ondulatória e ótica quântica'),
-    (7, 'Circuitos elétricos'),
-    (7, 'Circuitos elétricos de corrente alternada'),
-    (7, 'Termodinâmica'),
+    (7, 'Ótica geométrica', NULL),
+    (7, 'Ótica ondulatória e ótica quântica', NULL),
+    (7, 'Circuitos elétricos', NULL),
+    (7, 'Circuitos elétricos de corrente alternada', NULL),
+    (7, 'Termodinâmica', NULL),
     (7, 'Som', 'ANO 2'),
-    (7, 'Som e Música'),
+    (7, 'Som e Música', NULL),
     (7, 'Estrutura Atómica. Tabela Periódica. Ligação Química', 'ANO 1'),
-    (7, 'Espetroscopia e suas aplicações'),
+    (7, 'Espetroscopia e suas aplicações', NULL),
     (7, 'Soluções', 'ANO 1'),
-    (7, 'Colóides e Suspensões'),
+    (7, 'Colóides e Suspensões', NULL),
     (7, 'Reacções Químicas. Equilibrio Químico Homogéneo', 'ANO 2'),
-    (7, 'Equilibrio Químico Heterogéneo'),
-    (7, 'Q4. Equilibrio ácido-base'),
-    (7, 'Titulações Ácido-base'),
-    (7, 'Equilibrio de Oxidação-redução'),
-    (7, 'Eletroquimica'),
-    (7, 'Estado físico das substâncias e interações moleculares. Estado gasoso.'),
+    (7, 'Equilibrio Químico Heterogéneo', NULL),
+    (7, 'Q4. Equilibrio ácido-base', NULL),
+    (7, 'Titulações Ácido-base', NULL),
+    (7, 'Equilibrio de Oxidação-redução', NULL),
+    (7, 'Eletroquimica', NULL),
+    (7, 'Estado físico das substâncias e interações moleculares. Estado gasoso.', NULL),
     (7, 'Compostos orgânicos. Reações químicas', 'ANO 2'),
-    (7, 'Polimeros e Materiais Poliméricos'),
-    (7, 'Ligas Metálicas, Materiais Cerâmicos e Compósitos');
+    (7, 'Polimeros e Materiais Poliméricos', NULL),
+    (7, 'Ligas Metálicas, Materiais Cerâmicos e Compósitos', NULL);
 
 
 INSERT INTO modulos (id_disciplina, nome, ano) 
@@ -130,7 +130,7 @@ VALUES
     (8, 'Sistema Operativo Cliente', 'ANO 2'),
     (8, 'Sistema Operativo Servidor', 'ANO 3'),
     (8, 'Sistema Operativo Open Source', 'ANO 3'),
-    (8, 'Configuração Avançada de Servidores'),
+    (8, 'Configuração Avançada de Servidores', NULL),
     (8, 'Arquitectura de Sistemas Operativos', 'ANO 3');
 
 INSERT INTO modulos (id_disciplina, nome, ano) 
@@ -139,9 +139,9 @@ VALUES
     (9, 'Montagem e Configuração de Computadores', 'ANO 1'),
     (9, 'Técnicas de Detecção de Avarias', 'ANO 1'),
     (9, 'Arquitectura de Microprocessadores', 'ANO 1'),
-    (9, 'Programação de Microprocessadores'),
+    (9, 'Programação de Microprocessadores', NULL),
     (9, 'Instalação e Configuração de Redes Locais', 'ANO 1'),
-    (9, 'Manufactura de Circuitos Impressos');
+    (9, 'Manufactura de Circuitos Impressos', NULL);
 
 INSERT INTO modulos (id_disciplina, nome, ano) 
 VALUES
@@ -153,8 +153,8 @@ VALUES
     (10, 'Programação de Sistemas de Comunicação', 'ANO 3'),
     (10, 'Acesso a Bases de Dados via Web', 'ANO 3'),
     (10, 'Arquitecturas Cliente-Servidor', 'ANO 3'),
-    (10, 'Serviços de Redes'),
-    (10, 'Servidores de Correio Electrónico');
+    (10, 'Serviços de Redes', NULL),
+    (10, 'Servidores de Correio Electrónico', NULL);
 
 INSERT INTO modulos (id_disciplina, nome, ano) 
 VALUES
@@ -176,8 +176,10 @@ VALUES
     (11, 'Projecto de Software', 'ANO 3'),
     (11, 'Tecnologias de Acesso a Bases de Dados', 'ANO 3'),
     (11, 'Técnicas de Detecção e Tratamento de Erros', 'ANO 3'),
-    (11, 'Metodologias de Análise e Desenvolvimento de Sistemas'),
-    (11, 'Conceitos de Organização e Gestão de Empresas'),
+    (11, 'Metodologias de Análise e Desenvolvimento de Sistemas', NULL),
+    (11, 'Conceitos de Organização e Gestão de Empresas', NULL),
     (11, 'Ferramentas de Desenvolvimento de Páginas Web', 'ANO 3'),
-    (11, 'Ferramentas de Animação Gráfica'),
-    (11, 'Ferramentas de Tratamento de Imagem');
+    (11, 'Ferramentas de Animação Gráfica', NULL),
+    (11, 'Ferramentas de Tratamento de Imagem', NULL);
+
+SELECT * FROM modulos;

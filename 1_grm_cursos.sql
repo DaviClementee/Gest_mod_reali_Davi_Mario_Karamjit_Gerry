@@ -12,6 +12,6 @@ CREATE TABLE cursos (
 
 INSERT INTO cursos (nome, data_inicio, data_conclusao)
 VALUES
-("Técnico de Gestão e Programação de Sistemas Informáticos",'2023-09-16', '2026-06-30'),
+("Técnico de Gestão e Programação de Sistemas Informáticos",'2023-09-16', '2026-06-30');
 
 SELECT *FROM cursos;

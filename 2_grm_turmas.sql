@@ -8,11 +8,10 @@ CREATE TABLE turmas (
     ano_fim YEAR NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (id_curso) REFERENCES cursos(id)
-    --ligação com a tabela "cursos"
 );
 
 INSERT INTO turmas (id_curso, nome, ano_inicio, ano_fim)
 VALUES 
-(1, '12ºTGPSI', '2023', '2026'),
+(1, '12ºTGPSI', '2023', '2026');
 
 SELECT * FROM turmas;

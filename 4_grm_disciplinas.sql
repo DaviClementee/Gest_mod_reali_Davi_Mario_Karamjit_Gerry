@@ -20,6 +20,7 @@ VALUES
     ('Sistemas Operativos'),
     ('Arquitectura de Computadore'),
     ('Redes de Computadores'),
-    ('Programação de Sistemas de Informação');
+    ('Programação de Sistemas de Informação'),
+    ('Formação em Contexto de Trabalho');
 
 SELECT * FROM disciplinas;
