@@ -26,13 +26,13 @@ VALUES
     (1, 'Karamjit', 5204, '5204@esjaloures.org'),
     (1, 'Lourenço', 1139, '1139@esjaloures.org'),
     (1, 'Mario Junior', 3672, '3672@esjaloures.org'),
-    (1, 'Matheus Penelas', 8905, '8905@esjaloures.org'),
+    (1, 'Mateus Penelas', 8905, '8905@esjaloures.org'),
     (1, 'Mateus Caroça', 2468, '2468@esjaloures.org'),
     (1, 'Rodrigo Lourenço', 7031, '7031@esjaloures.org'),
     (1, 'Rodrigo Pereira', 4725, '4725@esjaloures.org'),
-    (1, 'Rodrigo Gomez', 5597, '5597@esjaloures.org'),
+    (1, 'Rodrigo Gomes', 5597, '5597@esjaloures.org'),
     (1, 'Rodrigo Andraz', 9274, '9274@esjaloures.org'),
-    (1, 'Rafa', 4760, '4760@esjaloures.org'),  
+    (1, 'Rafael', 4760, '4760@esjaloures.org'),  
     (1, 'Tiago', 6815, '6815@esjaloures.org');
 
 SELECT * FROM alunos;
