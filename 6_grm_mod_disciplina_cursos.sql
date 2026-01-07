@@ -20,7 +20,7 @@ CREATE TABLE mod_disciplina_cursos (
 
 INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeitas) 
 VALUES
--- DISCIPLINA 1: Português (OK)
+-- DISCIPLINA 1: Português 
 (1, 1, 1, '2021/2022', 1, 33.0, 34.0),
 (1, 1, 2, '2021/2022', 2, 34.0, 34.0),
 (1, 1, 3, '2021/2022', 3, 33.0, 32.0),
@@ -33,7 +33,7 @@ VALUES
 
 INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeitas) 
 VALUES
--- DISCIPLINA 2: Inglês (OK) 
+-- DISCIPLINA 2: Inglês
 (1, 2, 1, '2021/2022', 1, 27.0, 27.0),
 (1, 2, 2, '2021/2022', 2, 24.0, 25.0),
 (1, 2, 3, '2021/2022', 3, 24.0, 25.0),
@@ -46,7 +46,7 @@ VALUES
 
 INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeitas) 
 VALUES
--- DISCIPLINA 3: Área de Integração (ID 3) (OK)
+-- DISCIPLINA 3: Área de Integração 
 (1, 3, 1, '2021/2022', 1, 36.0, 39.0),
 (1, 3, 2, '2021/2022', 2, 36.0, 40.0),
 (1, 3, 3, '2021/2022', 3, 36.0, 36.0),
