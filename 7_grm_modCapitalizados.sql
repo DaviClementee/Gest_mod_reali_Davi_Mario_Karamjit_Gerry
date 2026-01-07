@@ -19,3 +19,4 @@ CREATE TABLE mod_capitalizados (
 );
 
 SELECT * FROM mod_capitalizados;
+

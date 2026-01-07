@@ -10,7 +10,7 @@ CREATE TABLE mod_disciplina_cursos (
     ano_mod VARCHAR(50),
     ordem_mod INT UNSIGNED,
     hora_mod DECIMAL(4,1) UNSIGNED,
-    hora_modFeitas DECIMAL(4,1) UNSIGNED,
+    hora_modFeita DECIMAL(4,1) UNSIGNED,
     PRIMARY KEY (id),
     FOREIGN KEY (id_curso) REFERENCES cursos(id),
     FOREIGN KEY (id_disciplina) REFERENCES disciplinas(id),
@@ -18,7 +18,7 @@ CREATE TABLE mod_disciplina_cursos (
 );
 
 
-INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeitas) 
+INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeita) 
 VALUES
 -- DISCIPLINA 1: Português 
 (1, 1, 1, '2021/2022', 1, 33.0, 34.0),
@@ -31,7 +31,7 @@ VALUES
 (1, 1, 8, '2023/2024', 8, 40.0, 38.0),
 (1, 1, 9, '2023/2024', 9, 40.0, 36.0);
 
-INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeitas) 
+INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeita) 
 VALUES
 -- DISCIPLINA 2: Inglês
 (1, 2, 1, '2021/2022', 1, 27.0, 27.0),
@@ -44,7 +44,7 @@ VALUES
 (1, 2, 8, '2023/2024', 8, 24.0, 24.0),
 (1, 2, 9, '2023/2024', 9, 24.0, 23.0);
 
-INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeitas) 
+INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeita) 
 VALUES
 -- DISCIPLINA 3: Área de Integração 
 (1, 3, 1, '2021/2022', 1, 36.0, 39.0),
@@ -54,7 +54,7 @@ VALUES
 (1, 3, 5, '2022/2023', 5, 36.0, 39.0),
 (1, 3, 6, '2022/2023', 6, 36.0, 27.0);
 
-INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeitas) 
+INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeita) 
 VALUES
 -- DISCIPLINA 4: Educação Física 
 (1, 4, 1, '2021/2022', 1, NULL, 18.0),
@@ -74,7 +74,7 @@ VALUES
 (1, 4, 16, '2023/2024', 15, NULL, 4.0),
 (1, 4, 13, '2023/2024', 16, NULL, 5.0);
 
-INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeitas) 
+INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeita) 
 VALUES
 -- DISCIPLINA 5: Tecnologias de Informação e Comunicação 
 (1, 5, 1, '2021/2022', 1, 25.0, 25.0),
@@ -86,7 +86,7 @@ VALUES
 (1, 5, 7, '2021/2022', 4, 25.0, 25.0),
 (1, 5, 8, NULL, NULL, 25.0, NULL);
 
-INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeitas) 
+INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeita) 
 VALUES
 -- DISCIPLINA 6: Matemática 
 (1, 6, 1, '2021/2022', 1, 36.0, 33.0),
@@ -106,7 +106,7 @@ VALUES
 (1, 6, 15, NULL, NULL, 36.0, NULL),
 (1, 6, 16, NULL, NULL, 36.0, NULL);
 
-INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeitas) 
+INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeita) 
 VALUES
 -- DISCIPLINA 7: Física e Química 
 (1, 7, 1, '2022/2023', 5, 21.0, 40.0),
@@ -137,7 +137,7 @@ VALUES
 (1, 7, 26, NULL, NULL, 9.0, NULL),
 (1, 7, 27, NULL, NULL, 9.0, NULL);
 
-INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeitas) 
+INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeita) 
 VALUES
 -- DISCIPLINA 8: Sistemas Operativos 
 (1, 8, 1, '2022/2023', 1, 21.0, 20.0),
@@ -147,7 +147,7 @@ VALUES
 (1, 8, 5, NULL, NULL, 21.0, NULL),
 (1, 8, 6, '2023/2024', 5, 21.0, 18.0);
 
-INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeitas) 
+INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeita) 
 VALUES
 -- DISCIPLINA 9: Arquitetura de Computadores 
 (1, 9, 1, '2021/2022', 1, 36.0, 34.0),
@@ -158,7 +158,7 @@ VALUES
 (1, 9, 6, '2021/2022', 5, 24.0, 26.0),
 (1, 9, 7, NULL, NULL, 24.0, NULL);
 
-INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeitas) 
+INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeita) 
 VALUES
 -- DISCIPLINA 10: Redes de Comunicação 
 (1, 10, 1, '2022/2023', 1, 30.0, 28.0),
@@ -172,7 +172,7 @@ VALUES
 (1, 10, 9, NULL, NULL, 30.0, NULL),
 (1, 10, 10, NULL, NULL, 30.0, NULL);
 
-INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeitas) 
+INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeita) 
 VALUES
 -- DISCIPLINA 11: Programação e Sistemas de Informação
 (1, 11, 1, '2021/2022', 1, 36.0, 33.0),
@@ -199,7 +199,7 @@ VALUES
 (1, 11, 22, NULL, NULL, 30.0, NULL), 
 (1, 11, 23, NULL, NULL, 30.0, NULL);
 
-INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeitas) 
+INSERT INTO mod_disciplina_cursos (id_curso, id_disciplina, id_modulo, ano_mod, ordem_mod, hora_mod, hora_modFeita) 
 VALUES
 -- DISCIPLINA 12: Formação em Contexto de Trabalho 
 (1, 12, 1, NULL, NULL, NULL, NULL),

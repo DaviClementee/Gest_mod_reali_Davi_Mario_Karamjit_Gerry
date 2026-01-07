@@ -5,8 +5,8 @@ DROP TABLE IF EXISTS modulos;
 CREATE TABLE modulos (
     id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
     id_disciplina INT(11) UNSIGNED NOT NULL,
-    nome VARCHAR(100) NOT NULL,
-    ano VARCHAR(50),
+    nome VARCHAR(20) NOT NULL,
+    ano VARCHAR(5),
     PRIMARY KEY (id),
     FOREIGN KEY (id_disciplina) REFERENCES disciplinas(id)
 );
